@@ -1,0 +1,28 @@
+@import url("/src/components/commons/layout/layout.css");
+@import url("/src/components/commons/layout/grid-container.css");
+@import url("/src/components/commons/header/header.css");
+@import url("/src/components/commons/input/input.css");
+@import url("/src/components/commons/logo/logo.css");
+@import url("/src/components/commons/navbar/navbar.css");
+@import url("/src/components/commons/button/button.css");
+@import url("/src/components/card/card-big.css");
+@import url("/src/components/commons/list/list.css");
+@import url("/src/components/commons/typeface/typeface.css");
+@import url("/src/components/filter/filter.css");
+@import url("/src/components/commons/footer/footer.css");
+@import url("/src/components/card/card-primary.css");
+
+.wrapper__aside{
+  padding: 0;
+}
+
+.filter{
+  border-radius: 0;
+}
+
+@media screen and (min-width:769px) {
+  .filter{
+    margin: 1.2em;
+    border-radius: var(--border-radius-md);
+  }
+}

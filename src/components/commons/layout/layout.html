@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Layout Component</title>  
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="/src/components/commons/header/header.css" />
+  <link rel="stylesheet" href="/src/components/commons/footer/footer.css" />
+  <link rel="stylesheet" href="/src/components/commons/button/button.css" />
+  <link rel="stylesheet" href="/src/components/commons/layout/grid-container.css" />
+  <link rel="stylesheet" href="/src/components/commons/logo/logo.css" />
+  <link rel="stylesheet" href="/src/components/commons/navbar/navbar.css" />
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="shortcut icon" href="/src/images/favicon.png" />  
+</head>
+
+<body>
+  <header class="header">
+
+    <section class="header__logo">
+      <figure class="logo">
+        <img class="logo__img" src="/src/images/logo-icon.png" alt="WorldCapp Logotipo"></img>
+        <section class="logo__text">
+          <span class="logo__first-part">world</span><span class="logo-center-dot">.</span><span
+            class="logo__last-part">capp</span>
+        </section>
+      </figure>
+    </section>
+
+    <nav class="header__navbar navbar">
+      <ul class="header__items navbar__items">
+        <li class="navbar__item"><button class="button button--text button--animated">Figuritas</button></li>
+        <li class="navbar__item"><button class="button button--text button--animated">Sobres</button></li>
+        <li class="navbar__item"><button class="button button--text button--animated">Perfil</button></li>
+        <li class="navbar__item">
+          <button class="button button--icon button--animated">
+            <i class="fas fa-right-from-bracket"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="header__burger-btm button button--icon button--animated">
+      <i class="fas fa-bars"></i>
+    </button>
+  
+  </header>
+  
+  <div class="wrapper wrapper--basic">
+    <section class="wrapper__aside">ASIDE</section>
+
+    <section class="wrapper__content">CONTENT</section>
+
+    <footer class="wrapper__footer footer">
+      <nav class="footer__navbar navbar">
+        <ul class="footer__items navbar__items navbar__items--close">
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-instagram"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-at"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      
+      <figure class="logo">
+        <img class="logo__img" src="/src/images/logo-icon.png" alt="WorldCapp Logotipo"></img>
+        <section class="logo__text">
+          <span class="logo__first-part">world</span><span class="logo-center-dot">.</span><span class="logo__last-part">capp</span>
+        </section>
+      </figure>
+    </footer>
+  </div>  
+</body>
+<script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+
+</html>

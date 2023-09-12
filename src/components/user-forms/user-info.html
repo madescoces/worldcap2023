@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Info</title>
+  <link rel="stylesheet" href="/src/styles/styles.css">
+  <link rel="stylesheet" href="/src/components/commons/input/input.css" />
+  <link rel="stylesheet" href="/src/components/commons/button/button.css" />
+  <link rel="stylesheet" href="/src/components/commons/list/list.css">
+  <link rel="stylesheet" href="/src/components/commons/typeface/typeface.css">
+  <link rel="stylesheet" href="/src/styles/test-container.css" />
+  <link rel="stylesheet" href="/src/components/commons/form/form.css">
+  <link rel="stylesheet" href="/src/components/commons/navbar/navbar.css">
+  <link rel="stylesheet" href="user-form.css">
+  <link rel="shortcut icon" href="/src/images/favicon.png">  
+</head>
+
+<body>
+  <div class="test-container test-container--nowhite test-container--h-centered">
+    <nav class="navbar navbar--full-width">
+      <ul class="navbar__items navbar__items--close">
+        <li class="navbar__item navbar__item--mobile">
+          <button class="button button--icon button--animated button--disabled">
+            <a class="button__link" href="/src/components/user-forms/missing-stickers.html">
+              <i class="fas fa-chevron-left" style="color:var(--text-color-white)"></i>
+            </a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--single navbar__item--variable">
+          <button class="button button--scalable button--tab-on">
+            <a class="button__link" href="/src/components/user-forms/user-info.html">Perfil Usuario</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--hide navbar__item--variable">
+          <button class="button button--scalable button--tab-off">
+            <a class="button__link" href="/src/components/user-forms/duplicate-stickers.html">Figuritas Repetidas</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--hide navbar__item--variable">
+          <button class="button button--scalable button--tab-off">
+            <a class="button__link" href="/src/components/user-forms/missing-stickers.html">Figuritas Faltantes</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--mobile">
+          <button class="button button--icon button--animated">
+            <a class="button__link" href="/src/components/user-forms/duplicate-stickers.html">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <form class="f-form">
+      <fieldset class="f-form__field">
+        <legend class="typeface typeface--xl typeface--strong">Información General</legend>
+        <ul class="l-list l-list--gaped">
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Nombre</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Apellido</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Correo electrónico</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Fecha de nacimiento</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="f-form__field">
+        <legend class="typeface typeface--xl typeface--strong">Dirección</legend>
+        <ul class="l-list l-list--gaped">
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Provincia</label>
+              <div class="input__wrapper">
+                <select class="input input--select">
+                  <option>Seleccione una opción</option>
+                  <option>Opción 1</option>
+                  <option>Opción 2</option>
+                  <option>Opción 3</option>
+                </select>
+              </div>
+            </section>
+          </li>
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Localidad</label>
+              <div class="input__wrapper">
+                <select class="input input--select">
+                  <option>Seleccione una opción</option>
+                  <option>Opción 1</option>
+                  <option>Opción 2</option>
+                  <option>Opción 3</option>
+                </select>
+              </div>
+            </section>
+          </li>
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Calle</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Altura</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="f-form__field">
+        <legend class="typeface typeface--xl typeface--strong">Ubicación Geográfica</legend>
+        <ul class="l-list l-list--gaped">
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Latitud</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Longitud</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Cercanía máxima para intercambiar</label>
+              <div class="input__wrapper">
+                <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+              </div>
+            </section>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset class="f-form__field">
+        <legend class="typeface typeface--xl typeface--strong">Criterio para el intercambio</legend>
+        <ul class="l-list l-list--gaped">
+          <li class="l-list__line l-list__line--half">
+            <section class="input-row">
+              <label class="input-row__label">Criterio</label>
+              <div class="input__wrapper">
+                <select class="input input--select">
+                  <option>Seleccione una opción</option>
+                  <option>Opción 1</option>
+                  <option>Opción 2</option>
+                  <option>Opción 3</option>
+                </select>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </fieldset>
+      <section class="f-form__action">
+        <button class="button button--secondary button--large">Resetear</button>
+        <button class="button button--primary button--large">Guardar</button>
+      </section>
+    </form>
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+</html>

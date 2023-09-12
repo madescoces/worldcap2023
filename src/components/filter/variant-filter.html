@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filter From To</title>
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="/src/components/commons/input/input.css" />
+  <link rel="stylesheet" href="filter.css" />
+  <link rel="shortcut icon" href="/src/images/favicon.png" />
+</head>
+
+<body>
+  <form class="filter">
+    <h3 class="filter__title filter__title--primary">Filtros</h3>
+    <section class="filter__section">
+      <section class="filter__sub-section">
+        <h4 class="filter__title filter__title--secondary">Valoración</h4>
+        <section class="filter__input-group">
+          <section class="filter__container input-row">    
+            <label class="input-row__label">Desde</label>
+            <div class="input__wrapper">
+              <input name="primary" class="input" type="text" placeholder="Ingrese un valor" />
+            </div>
+          </section>
+          <section class="filter__container input-row">    
+            <label class="input-row__label">Hasta</label>
+            <div class="input__wrapper">
+              <input name="primary" class="input" type="text" placeholder="Ingrese un valor" />
+            </div>
+          </section>
+        </section>
+        <div>
+          <input id="onFire" type="checkbox">
+          <label for="onFire">On fire</label>
+        </div>
+      </section>
+      <section class="filter__sub-section filter__sub-section--grow">
+        <div class="filter__checkbox">
+          <input id="promise" type="checkbox">
+          <label for="promise">Es promesa</label>
+        </div>
+      </section>
+    </section>
+  </form>
+  
+</body>
+<script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+</html>

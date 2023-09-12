@@ -1,0 +1,47 @@
+@import url(card.css);
+
+.card--big {
+  grid-template-rows: minmax(10em, max-content) max-content minmax(28em, max-content) minmax(16em, max-content);
+  grid-template-areas:
+    "header"
+    "image"
+    "data"
+    "action";
+  font-size: 1.4em;
+  max-width: 85rem;
+  width: 100vw;
+  border-radius: 0;
+  box-shadow:none;
+}
+
+@media screen and (min-width:601px) {
+  .card--big {
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: minmax(4.7em, max-content) max-content minmax(16em, max-content);
+    grid-template-areas:
+      "header header"
+      "image data"
+      "action action";
+    font-size: 1em;
+    width: auto;
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--box-shadow-md);
+  }
+
+  .card__header>:last-child {
+    margin-left: auto;
+  }
+
+  .card__image-container {
+    margin-right: 0;
+  }
+
+  .card__header--column {
+    flex-direction: row;
+  }
+
+  .card__image--vertical-fit {
+    width: auto;
+    max-height: 30em;
+  }
+}

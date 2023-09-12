@@ -1,0 +1,128 @@
+.wrapper {
+  /*Layout*/
+  display: grid;
+  position: absolute;  
+  top: 6rem;
+  min-width: 35rem;
+  width: 100vw;
+  height: calc(100vh - 6rem);
+}
+
+/* Wrapper Modifiers */
+.wrapper--basic {
+  grid-template-rows: 1fr 1fr var(--footer-height);
+  grid-template-areas:
+    "aside"
+    "content"
+    "footer";
+}
+
+.wrapper--search {
+  /*Layout*/
+  grid-template-rows: var(--search-height) 1fr 1fr var(--footer-height);
+  grid-template-areas:
+    "search"
+    "aside"
+    "content"
+    "footer";
+}
+
+.wrapper--tiny,
+.wrapper--no-header {
+  /*Layout*/
+  grid-template-rows: 1fr var(--footer-height);
+  grid-template-areas:
+    "content"
+    "footer";
+}
+
+.wrapper--no-header{
+  top: 0;
+  height: 100vh;
+}
+
+/* Wrapper Elements */
+.wrapper__search {
+  /*Layout*/
+  grid-area: search;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  padding: 0 var(--gap-default);  
+  /*styles*/
+  background-color: var(--color-tertiary);
+}
+
+.wrapper__aside {
+  /*Layout*/
+  grid-area: aside;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: var(--gap-sm);
+  /*styles*/
+  background-color: var(--color-clear-medium);
+}
+
+.wrapper__content {
+  /*Layout*/
+  grid-area: content;
+  display: flex;
+  padding: var(--gap-default);
+}
+
+.wrapper--no-header .wrapper__content {
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.wrapper--tiny .wrapper__content {
+  justify-content: center;
+  padding: 0;
+}
+
+.wrapper__footer {
+  /*Layout*/
+  grid-area: footer;
+  /*styles*/
+  background-color: var(--color-secondary);
+}
+
+@media screen and (min-width:769px) {
+  .wrapper--basic {
+    /*Layout*/
+    grid-template-columns: min(28rem, 32vw) 1fr;
+    grid-template-rows: 1fr var(--footer-height);
+    grid-template-areas:
+      "aside content"
+      "footer footer";
+  }
+
+  .wrapper--search {
+    /*Layout*/
+    grid-template-columns: min(28rem, 32vw) 1fr;
+    grid-template-rows: var(--search-height) 1fr var(--footer-height);
+    grid-template-areas:
+      "search search"
+      "aside content"
+      "footer footer";
+  } 
+
+  .wrapper--tiny {
+    /*Layout*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr var(--footer-height);
+    grid-template-areas:
+      "content"
+      "footer";
+  }
+ 
+  .wrapper__content {
+    overflow-y: scroll; 
+  }
+
+  .wrapper--tiny .wrapper__content {    
+    padding: var(--gap-default);
+  }
+}

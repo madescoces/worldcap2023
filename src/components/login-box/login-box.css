@@ -1,0 +1,43 @@
+@import url(/src/components/commons/button/button.css);
+@import url(/src/components/commons/logo/logo.css);
+@import url(/src/components/commons/input/input.css);
+
+.form-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 8em;  
+}
+
+.form-login__header {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding: var(--gap-default);
+  background-image: var(--gradient-primary);
+}
+
+.form-login__header .logo{
+  font-size: 3.5em;  
+}
+
+.form-login__actions{
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-default);
+  min-width: 75%;  
+}
+
+@media screen and (min-width:401px) {
+  .form-login{
+    border-radius: var(--border-radius-md);
+    width: 40em;
+    height: 36em;
+    overflow: hidden;
+    box-shadow: var(--box-shadow-md);
+    padding-bottom: 4em;
+  }
+}

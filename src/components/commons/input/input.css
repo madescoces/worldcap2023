@@ -1,0 +1,126 @@
+/*Input Container*/
+.input-row {
+  /*Layout*/
+  display: flex;
+  flex-wrap: wrap;
+  height: min-content;
+  width: 100%;
+  min-width: 10em;
+}
+
+.input-row--search {
+  flex-basis: 96%;
+}
+
+/*Input elements*/
+.input-row__label {
+  /*Layout*/
+  width: 100%;
+  padding: 0.3em 0 0.2em 0;
+  /*Typeface*/
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.input__wrapper {
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 3.8em;
+}
+
+.input {
+  /*Layout*/
+  width: 100%;
+  /*Typeface*/
+  font-family: var(--typeface-primary);
+  font-size: 1.2em;
+  text-indent: 1em;
+  padding-right: 1em;
+  color: var(--text-color);
+  /*Visual*/
+  background-color: var(--color-clear);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius-xs);
+  outline: none;
+  box-shadow: var(--box-shadow-xs);
+  /*Animation */
+  transition: border var(--transition-time) ease;
+}
+
+.input--icon-left {
+  /*Visual*/
+  text-indent: 3.2em;
+}
+
+.input--icon-right {
+  /*Layout*/
+  padding-right: 3.2em;
+}
+
+.input--select {
+  /*Visual*/
+  cursor: pointer;
+  border: 1px solid var(--color-clear);
+}
+
+.input:focus {
+  /*Visual*/
+  border: 1px solid var(--color-focus);
+}
+
+.input::placeholder {
+  /*Visual*/
+  color: var(--text-color-2lighter);
+}
+
+.input__icon {
+  /*Layout*/
+  position: absolute;
+  width: 2.4em;
+  height: inherit;
+  bottom: 0;
+  /*Visual*/
+  background-color: var(--color-primary);
+  cursor: text;
+  /*Animation*/
+  transition: background-color var(--transition-time) ease;
+}
+
+.input__icon--left {
+  /*Layout*/
+  left: 0;
+  /*Visual*/
+  border-radius: var(--border-radius-xs) 0 0 var(--border-radius-xs);
+}
+
+.input__icon--right {
+  /*Layout*/
+  right: 0;
+  /*Visual*/
+  border-radius: 0 var(--border-radius-xs) var(--border-radius-xs) 0;
+}
+
+.input:focus+.input__icon {
+  /*Visual*/
+  background-color: var(--color-focus);
+}
+
+/*Force Font Awesome icons to center*/
+.input__icon--left.fas,
+.input__icon--right.fas {
+  /*Layout*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*Typeface*/
+  font-size: 1.4em;
+  /*Visual*/
+  color: var(--color-clear);
+}
+
+@media screen and (min-width:769px) {
+  .input-row--search {
+    flex-basis: 60%;
+  }
+}

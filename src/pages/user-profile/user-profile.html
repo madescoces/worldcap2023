@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="user-profile.css" />
+  <link rel="shortcut icon" href="/src/images/favicon.png" />
+</head>
+
+<body>
+  <header class="header">
+    <section class="header__logo">
+      <figure class="logo">
+        <img class="logo__img" src="/src/images/logo-icon.png" alt="WorldCapp Logotipo"></img>
+        <section class="logo__text">
+          <span class="logo__first-part">world</span><span class="logo-center-dot">.</span><span
+            class="logo__last-part">capp</span>
+        </section>
+      </figure>
+    </section>
+
+    <nav class="header__navbar navbar">
+      <ul class="header__items navbar__items">
+        <li class="navbar__item"><button class="button button--text button--animated">Figuritas</button></li>
+        <li class="navbar__item"><button class="button button--text button--animated">Sobres</button></li>
+        <li class="navbar__item"><button class="button button--text button--animated">Perfil</button></li>
+        <li class="navbar__item">
+          <button class="button button--icon button--animated">
+            <i class="fas fa-right-from-bracket"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="header__burger-btm button button--icon button--animated">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+
+  <div class="wrapper wrapper--basic">
+    <section class="wrapper__aside">
+      <article class="user-card">
+        <figure class="user-card__image"></figure>
+        <div class="user-card__data">
+          <section class="user-card__data-name">
+            <p>
+              elMuñe<button class="button button--icon button--animated button--dark"><i
+                  class="fas fa-pen-to-square fa-sm"></i></button>
+            </p>
+          </section>
+          <section class="user-card__personal">
+            <p class="typeface"><strong class="typeface--strong">Edad:</strong> 73 años</p>
+            <p class="typeface"><strong class="typeface--strong">Ubicacion:</strong> Parque Chacabuco</p>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <section class="wrapper__content">
+      <nav class="navbar navbar--full-width">
+        <ul class="navbar__items navbar__items--close">
+          <li class="navbar__item navbar__item--mobile">
+            <button class="button button--icon button--animated button--disabled">
+              <a class="button__link" href="#">
+                <i class="fas fa-chevron-left" style="color:var(--text-color-white)"></i>
+              </a>
+            </button>
+          </li>
+          <li class="navbar__item navbar__item--single navbar__item--variable">
+            <button class="button button--scalable button--tab-on">
+              <a class="button__link" href="/src/pages/user-profile/user-profile.html">Perfil Usuario</a>
+            </button>
+          </li>
+          <li class="navbar__item navbar__item--hide navbar__item--variable">
+            <button class="button button--scalable button--tab-off">
+              <a class="button__link" href="/src/pages/user-profile/duplicated-stickers.html">Figuritas Repetidas</a>
+            </button>
+          </li>
+          <li class="navbar__item navbar__item--hide navbar__item--variable">
+            <button class="button button--scalable button--tab-off">
+              <a class="button__link" href="/src/pages/user-profile/missing-stickers.html">Figuritas Faltantes</a>
+            </button>
+          </li>
+          <li class="navbar__item navbar__item--mobile">
+            <button class="button button--icon button--animated">
+              <a class="button__link" href="/src/pages/user-profile/duplicated-stickers.html">
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <form class="f-form">
+        <fieldset class="f-form__field">
+          <legend class="typeface typeface--xl typeface--strong">Información General</legend>
+          <ul class="l-list l-list--gaped">
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Nombre</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Apellido</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Correo electrónico</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Fecha de nacimiento</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="f-form__field">
+          <legend class="typeface typeface--xl typeface--strong">Dirección</legend>
+          <ul class="l-list l-list--gaped">
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Provincia</label>
+                <div class="input__wrapper">
+                  <select class="input input--select">
+                    <option>Seleccione una opción</option>
+                    <option>Opción 1</option>
+                    <option>Opción 2</option>
+                    <option>Opción 3</option>
+                  </select>
+                </div>
+              </section>
+            </li>
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Localidad</label>
+                <div class="input__wrapper">
+                  <select class="input input--select">
+                    <option>Seleccione una opción</option>
+                    <option>Opción 1</option>
+                    <option>Opción 2</option>
+                    <option>Opción 3</option>
+                  </select>
+                </div>
+              </section>
+            </li>
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Calle</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Altura</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="f-form__field">
+          <legend class="typeface typeface--xl typeface--strong">Ubicación Geográfica</legend>
+          <ul class="l-list l-list--gaped">
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Latitud</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Longitud</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Cercanía máxima para intercambiar</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Texto aquí" />
+                </div>
+              </section>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="f-form__field">
+          <legend class="typeface typeface--xl typeface--strong">Criterio para el intercambio</legend>
+          <ul class="l-list l-list--gaped">
+            <li class="l-list__line l-list__line--half">
+              <section class="input-row">
+                <label class="input-row__label">Criterio</label>
+                <div class="input__wrapper">
+                  <select class="input input--select">
+                    <option>Seleccione una opción</option>
+                    <option>Opción 1</option>
+                    <option>Opción 2</option>
+                    <option>Opción 3</option>
+                  </select>
+                </div>
+              </section>
+            </li>
+          </ul>
+        </fieldset>
+        <section class="f-form__action">
+          <button class="button button--secondary button--large">Resetear</button>
+          <button class="button button--primary button--large">Guardar</button>
+        </section>
+      </form>
+    </section>
+
+    <footer class="wrapper__footer footer">
+      <nav class="footer__navbar navbar">
+        <ul class="footer__items navbar__items navbar__items--close">
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-instagram"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-at"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <figure class="logo">
+        <img class="logo__img" src="/src/images/logo-icon.png" alt="WorldCapp Logotipo"></img>
+        <section class="logo__text">
+          <span class="logo__first-part">world</span><span class="logo-center-dot">.</span><span
+            class="logo__last-part">capp</span>
+        </section>
+      </figure>
+    </footer>
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+
+</html>

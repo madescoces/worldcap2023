@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figuritas Faltantes</title>
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="/src/components/commons/input/input.css" />
+  <link rel="stylesheet" href="/src/components/commons/button/button.css" />
+  <link rel="stylesheet" href="/src/components/commons/list/list.css">
+  <link rel="stylesheet" href="/src/components/commons/typeface/typeface.css">
+  <link rel="stylesheet" href="/src/styles/test-container.css" />
+  <link rel="stylesheet" href="/src/components/commons/navbar/navbar.css" />
+  <link rel="stylesheet" href="/src/components/card/card-image.css" />
+  <link rel="stylesheet" href="/src/components/commons/layout/grid-container.css" />
+  <link rel="stylesheet" href="user-form.css" />
+  <link rel="shortcut icon" href="/src/images/favicon.png" />  
+</head>
+
+<body>
+  <div class="test-container test-container--nowhite test-container--h-centered">
+    <nav class="navbar navbar--full-width">
+      <ul class="navbar__items navbar__items--close">
+        <li class="navbar__item navbar__item--mobile">
+          <button class="button button--icon button--animated">
+            <a class="button__link" href="/src/components/user-forms/duplicate-stickers.html">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--hide navbar__item--variable">
+          <button class="button button--scalable button--tab-off">
+            <a class="button__link" href="/src/components/user-forms/user-info.html">Perfil Usuario</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--hide navbar__item--variable">
+          <button class="button button--scalable button--tab-off">
+            <a class="button__link" href="/src/components/user-forms/duplicate-stickers.html">Figuritas Repetidas</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--single navbar__item--variable">
+          <button class="button button--scalable button--tab-on">
+            <a class="button__link" href="/src/components/user-forms/missing-stickers.html">Figuritas Faltantes</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--mobile">
+          <button class="button button--icon button--animated button--disabled">
+            <a class="button__link" href="/src/components/user-forms/user-info.html">
+              <i class="fas fa-chevron-right" style="color:var(--text-color-white)"></i>
+            </a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="u-container-cards grid-container">
+      <article class="card card--image card--animated card--shadow">
+        <button class="card__delete-icon button button--icon">
+          <i class="fas fa-trash-can"></i>
+        </button>
+        <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+        <header class="card__header card__header--top-rounded card__header--over">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <h2 class="typeface typeface--md typeface--justify">
+                Emiliano Martinez
+                <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                    class="fas fa-star"></i>&nbsp;124</span>
+              </h2>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span>
+                  <i class="fas fa-weight-scale"></i>
+                  <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                </span>
+                <span>
+                  <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                  <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                </span>
+              </p>
+            </li>
+          </ul>
+        </header>
+        <section class="card__content card__content--spaced">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+              </p>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+              </p>
+            </li>
+            <li class="l-list__line l-list__line--center l-list__line--focus">
+              <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="card card--image card--animated card--shadow">
+        <button class="card__delete-icon button button--icon">
+          <i class="fas fa-trash-can"></i>
+        </button>
+        <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+        <header class="card__header card__header--top-rounded card__header--over">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <h2 class="typeface typeface--md typeface--justify">
+                Emiliano Martinez
+                <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                    class="fas fa-star"></i>&nbsp;124</span>
+              </h2>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span>
+                  <i class="fas fa-weight-scale"></i>
+                  <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                </span>
+                <span>
+                  <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                  <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                </span>
+              </p>
+            </li>
+          </ul>
+        </header>
+        <section class="card__content card__content--spaced">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+              </p>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+              </p>
+            </li>
+            <li class="l-list__line l-list__line--center l-list__line--focus">
+              <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="card card--image card--animated card--shadow">
+        <button class="card__delete-icon button button--icon">
+          <i class="fas fa-trash-can"></i>
+        </button>
+        <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+        <header class="card__header card__header--top-rounded card__header--over">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <h2 class="typeface typeface--md typeface--justify">
+                Emiliano Martinez
+                <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                    class="fas fa-star"></i>&nbsp;124</span>
+              </h2>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span>
+                  <i class="fas fa-weight-scale"></i>
+                  <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                </span>
+                <span>
+                  <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                  <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                </span>
+              </p>
+            </li>
+          </ul>
+        </header>
+        <section class="card__content card__content--spaced">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+              </p>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+              </p>
+            </li>
+            <li class="l-list__line l-list__line--center l-list__line--focus">
+              <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="card card--image card--animated card--shadow">
+        <button class="card__delete-icon button button--icon">
+          <i class="fas fa-trash-can"></i>
+        </button>
+        <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+        <header class="card__header card__header--top-rounded card__header--over">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <h2 class="typeface typeface--md typeface--justify">
+                Emiliano Martinez
+                <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                    class="fas fa-star"></i>&nbsp;124</span>
+              </h2>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span>
+                  <i class="fas fa-weight-scale"></i>
+                  <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                </span>
+                <span>
+                  <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                  <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                </span>
+              </p>
+            </li>
+          </ul>
+        </header>
+        <section class="card__content card__content--spaced">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+              </p>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+              </p>
+            </li>
+            <li class="l-list__line l-list__line--center l-list__line--focus">
+              <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+            </li>
+          </ul>
+        </section>
+      </article>
+      <article class="card card--image card--animated card--shadow">
+        <button class="card__delete-icon button button--icon">
+          <i class="fas fa-trash-can"></i>
+        </button>
+        <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+        <header class="card__header card__header--top-rounded card__header--over">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <h2 class="typeface typeface--md typeface--justify">
+                Emiliano Martinez
+                <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                    class="fas fa-star"></i>&nbsp;124</span>
+              </h2>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span>
+                  <i class="fas fa-weight-scale"></i>
+                  <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                </span>
+                <span>
+                  <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                  <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                </span>
+              </p>
+            </li>
+          </ul>
+        </header>
+        <section class="card__content card__content--spaced">
+          <ul class="l-list">
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+              </p>
+            </li>
+            <li class="l-list__line">
+              <p class="typeface typeface--justify">
+                <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+              </p>
+            </li>
+            <li class="l-list__line l-list__line--center l-list__line--focus">
+              <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+            </li>
+          </ul>
+        </section>
+      </article>            
+    </div>
+    <button class="u-container-cards__button button--icon button--font-2xl button--icon-circle button--animated">
+      <i class="fas fa-plus"></i>
+    </button>
+  </div>
+  <!-- <form class="form-info" autocomplete="off">
+    <nav class="form-info__nav">
+      <ul class="navbar__buttons">
+        <li class="button--icon">
+          <a class="button__link" href="/src/components/profile-user/duplicate-stickers.html">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+        </li>        
+        <button class="button--tab-off"><a class="button__link" href="/src/components/profile-user/profile-user.html">Perfil Usuario</a></button>
+        <button class="button--tab-off"><a class="button__link" href="/src/components/profile-user/duplicate-stickers.html">Figuritas Repetidas</a></button>
+        <button class="button--tab-on"><a class="button__link" href="/src/components/profile-user/missing-stickers.html">Figuritas Faltantes</a></button>
+        <li class="button--icon button--disabled">
+          <a class="button__link" href="">
+            <i class="fas fa-chevron-right" style="color:var(--text-color-white)"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <article class="form-info__body form-info__body--cards">
+      <div class="form-info__body-cards">
+        <article class="player-card player-card--trash">
+          <section class="player-card__img">
+            <img src="/src/images/pity.png" alt="Gonzalo  Martinez" />
+            <li class="button--icon">
+              <a class="button__link" href="">
+                <i class="fas fa-trash-can"></i>
+              </a>
+            </li>
+          </section>
+          <section class="player-card__content">
+            <header class="player-card__header">
+              <h2>Gonzalo  Martinez</h2>
+              <h2><i class="fas fa-id-badge fa-sm"></i> 22</h2>
+              <h2>
+                <i class="fas fa-trophy fa-sm"></i>
+                <i class="fas fa-fire fa-sm"></i>
+                <i class="fas fa-star fa-sm"></i>
+                 124
+              </h2>
+              <p>
+                <i class="fas fa-weight-scale fa-sm"></i></i><strong> Peso:</strong> 85 kilos
+              </p>
+              <p>
+                <i class="fas fa-ruler-vertical fa-sm"></i><i class="fas fa-person fa-sm"></i></i><strong></i>
+                  Altura:</strong> 1.7 metros
+              </p>
+            </header>
+            <section class="player-card__body">
+              <p><strong>Casaca:</strong> 10</p>
+              <p><strong>Nacimiento:</strong> 13/06/93 (30 años)</p>
+              <p><strong>Selección:</strong> Argentina</p>
+              <p><strong>Posición:</strong> Mediocampista</p>
+            </section>
+            <footer class="player-card__footer">
+              <h2 class="player-card__body--highlight">COTIZACION: EU 28.000.000</h2>
+            </footer>
+          </section>
+        </article>
+      </div>
+      <article class="form-info__actions form-info__actions--button-circle-container">
+        <li class="button--circle">
+          <a class="button__link" href="">
+            <i class="fas fa-plus"></i>
+          </a>
+        </li>
+      </article>
+    </article>
+  </form> -->
+</body>
+<script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+</html>

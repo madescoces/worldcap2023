@@ -1,0 +1,17 @@
+.u-container-cards.grid-container {  
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-clear-dark);
+  padding: var(--gap-default);
+}
+
+.u-container-cards__button{
+  position: sticky;
+  border: 0;
+  bottom: 1.7em;
+  z-index: 99;
+  background-color: var(--color-tertiary);
+}
+
+.u-container-cards__button:hover{
+  background-color: var(--color-focus);
+}

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Búsqueda de figuritas</title>
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="card-search.css" />  
+  <link rel="stylesheet" href="/src/styles/test-container.css">
+  <link rel="shortcut icon" href="/src/images/favicon.png" />
+</head>
+
+<body>
+  <header class="header">
+    <section class="header__logo">
+      <figure class="logo">
+        <img class="logo__img" src="/src/images/logo-icon.png" alt="WorldCapp Logotipo"></img>
+        <section class="logo__text">
+          <span class="logo__first-part">world</span><span class="logo-center-dot">.</span><span
+            class="logo__last-part">capp</span>
+        </section>
+      </figure>
+    </section>
+
+    <nav class="header__navbar navbar">
+      <ul class="header__items navbar__items">
+        <li class="navbar__item"><button class="button button--text button--animated">Figuritas</button></li>
+        <li class="navbar__item"><button class="button button--text button--animated">Sobres</button></li>
+        <li class="navbar__item"><button class="button button--text button--animated">Perfil</button></li>
+        <li class="navbar__item">
+          <button class="button button--icon button--animated">
+            <i class="fas fa-right-from-bracket"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="header__burger-btm button button--icon button--animated">
+      <i class="fas fa-bars"></i>
+    </button>
+  </header>
+  
+  <div class="wrapper wrapper--search">
+    
+    <section class="wrapper__search">
+       <section class="input-row input-row--search">
+          <div class="input__wrapper">
+            <input name="search" class="input  input--icon-right" type="text" placeholder="Buscar:" />
+            <i class="input__icon input__icon--right fas fa-magnifying-glass"></i>
+          </div>
+        </section>      
+    </section>
+
+    <section class="wrapper__aside">
+      <form class="filter">
+        <h3 class="filter__title filter__title--primary">Filtros</h3>
+        <section class="filter__section">
+          <section class="filter__sub-section">
+            <h4 class="filter__title filter__title--secondary">Valoración</h4>
+            <section class="filter__input-group">
+              <section class="filter__container input-row">    
+                <label class="input-row__label">Desde</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Ingrese un valor" />
+                </div>
+              </section>
+              <section class="filter__container input-row">    
+                <label class="input-row__label">Hasta</label>
+                <div class="input__wrapper">
+                  <input name="primary" class="input" type="text" placeholder="Ingrese un valor" />
+                </div>
+              </section>
+            </section>
+            <div>
+              <input id="onFire" type="checkbox">
+              <label for="onFire">On fire</label>
+            </div>
+          </section>
+          <section class="filter__sub-section filter__sub-section--grow">
+            <div class="filter__checkbox">
+              <input id="promise" type="checkbox">
+              <label for="promise">Es promesa</label>
+            </div>
+          </section>
+        </section>
+      </form>
+    </section>
+    
+    <section class="wrapper__content">
+      <div class="grid-container">
+        <article class="card card--image card--animated card--shadow">
+          <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+          <header class="card__header card__header--top-rounded card__header--over">
+            <ul class="l-list">
+              <li class="l-list__line">
+                <h2 class="typeface typeface--md typeface--justify">
+                  Emiliano Martinez
+                  <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                  <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                      class="fas fa-star"></i>&nbsp;124</span>
+                </h2>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span>
+                    <i class="fas fa-weight-scale"></i>
+                    <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                  </span>
+                  <span>
+                    <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                    <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </header>
+          <section class="card__content card__content--spaced">
+            <ul class="l-list">
+              <li class="l-list__line">
+                  <p class="typeface typeface--justify">
+                    <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                    <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+                  </p>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                  <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+                </p>            
+              </li>
+              <li class="l-list__line l-list__line--center l-list__line--focus">
+                <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+              </li>
+              <li class="l-list__line l-list__line--center">
+                <p class="typeface typeface--strong typeface--xl typeface--upper">Cedida por:</p>
+                <p class="typeface typeface--md">Juan "Cachito" Caceffo</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="card card--image card--animated card--shadow">
+          <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+          <header class="card__header card__header--top-rounded card__header--over">
+            <ul class="l-list">
+              <li class="l-list__line">
+                <h2 class="typeface typeface--md typeface--justify">
+                  Emiliano Martinez
+                  <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                  <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                      class="fas fa-star"></i>&nbsp;124</span>
+                </h2>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span>
+                    <i class="fas fa-weight-scale"></i>
+                    <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                  </span>
+                  <span>
+                    <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                    <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </header>
+          <section class="card__content card__content--spaced">
+            <ul class="l-list">
+              <li class="l-list__line">
+                  <p class="typeface typeface--justify">
+                    <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                    <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+                  </p>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                  <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+                </p>            
+              </li>
+              <li class="l-list__line l-list__line--center l-list__line--focus">
+                <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+              </li>
+              <li class="l-list__line l-list__line--center">
+                <p class="typeface typeface--strong typeface--xl typeface--upper">Cedida por:</p>
+                <p class="typeface typeface--md">Juan "Cachito" Caceffo</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="card card--image card--animated card--shadow">
+          <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+          <header class="card__header card__header--top-rounded card__header--over">
+            <ul class="l-list">
+              <li class="l-list__line">
+                <h2 class="typeface typeface--md typeface--justify">
+                  Emiliano Martinez
+                  <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                  <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                      class="fas fa-star"></i>&nbsp;124</span>
+                </h2>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span>
+                    <i class="fas fa-weight-scale"></i>
+                    <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                  </span>
+                  <span>
+                    <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                    <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </header>
+          <section class="card__content card__content--spaced">
+            <ul class="l-list">
+              <li class="l-list__line">
+                  <p class="typeface typeface--justify">
+                    <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                    <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+                  </p>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                  <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+                </p>            
+              </li>
+              <li class="l-list__line l-list__line--center l-list__line--focus">
+                <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+              </li>
+              <li class="l-list__line l-list__line--center">
+                <p class="typeface typeface--strong typeface--xl typeface--upper">Cedida por:</p>
+                <p class="typeface typeface--md">Juan "Cachito" Caceffo</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="card card--image card--animated card--shadow">
+          <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+          <header class="card__header card__header--top-rounded card__header--over">
+            <ul class="l-list">
+              <li class="l-list__line">
+                <h2 class="typeface typeface--md typeface--justify">
+                  Emiliano Martinez
+                  <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                  <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                      class="fas fa-star"></i>&nbsp;124</span>
+                </h2>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span>
+                    <i class="fas fa-weight-scale"></i>
+                    <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                  </span>
+                  <span>
+                    <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                    <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </header>
+          <section class="card__content card__content--spaced">
+            <ul class="l-list">
+              <li class="l-list__line">
+                  <p class="typeface typeface--justify">
+                    <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                    <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+                  </p>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                  <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+                </p>            
+              </li>
+              <li class="l-list__line l-list__line--center l-list__line--focus">
+                <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+              </li>
+              <li class="l-list__line l-list__line--center">
+                <p class="typeface typeface--strong typeface--xl typeface--upper">Cedida por:</p>
+                <p class="typeface typeface--md">Juan "Cachito" Caceffo</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="card card--image card--animated card--shadow">
+          <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+          <header class="card__header card__header--top-rounded card__header--over">
+            <ul class="l-list">
+              <li class="l-list__line">
+                <h2 class="typeface typeface--md typeface--justify">
+                  Emiliano Martinez
+                  <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                  <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                      class="fas fa-star"></i>&nbsp;124</span>
+                </h2>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span>
+                    <i class="fas fa-weight-scale"></i>
+                    <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                  </span>
+                  <span>
+                    <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                    <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </header>
+          <section class="card__content card__content--spaced">
+            <ul class="l-list">
+              <li class="l-list__line">
+                  <p class="typeface typeface--justify">
+                    <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                    <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+                  </p>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                  <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+                </p>            
+              </li>
+              <li class="l-list__line l-list__line--center l-list__line--focus">
+                <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+              </li>
+              <li class="l-list__line l-list__line--center">
+                <p class="typeface typeface--strong typeface--xl typeface--upper">Cedida por:</p>
+                <p class="typeface typeface--md">Juan "Cachito" Caceffo</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <article class="card card--image card--animated card--shadow">
+          <img class="card__image" src="/src/images/dibu.png" alt="Imagen Emiliano Martinez" />
+          <header class="card__header card__header--top-rounded card__header--over">
+            <ul class="l-list">
+              <li class="l-list__line">
+                <h2 class="typeface typeface--md typeface--justify">
+                  Emiliano Martinez
+                  <span><i class="fas fa-id-badge"></i>&nbsp;22</span>
+                  <span><i class="fas fa-trophy fas--highlighted"></i><i class="fas fa-fire fas--hot"></i><i
+                      class="fas fa-star"></i>&nbsp;124</span>
+                </h2>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span>
+                    <i class="fas fa-weight-scale"></i>
+                    <strong class="typeface--strong">Peso:</strong>&nbsp;88 kilos
+                  </span>
+                  <span>
+                    <i class="fas fa-ruler-vertical"></i><i class="fas fa-person"></i>
+                    <strong class="typeface--strong">Altura:</strong>&nbsp;1.95 metros
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </header>
+          <section class="card__content card__content--spaced">
+            <ul class="l-list">
+              <li class="l-list__line">
+                  <p class="typeface typeface--justify">
+                    <span><strong class="typeface--strong">Casaca:</strong>&nbsp;23</span>
+                    <span><strong class="typeface--strong">Nacimiento:</strong>&nbsp;02/09/92 (30 años)</span>
+                  </p>
+              </li>
+              <li class="l-list__line">
+                <p class="typeface typeface--justify">
+                  <span><strong class="typeface--strong">Selección:</strong>&nbsp;Argentina</span>
+                  <span><strong class="typeface--strong">Posición:</strong>&nbsp;Arquero</span>
+                </p>            
+              </li>
+              <li class="l-list__line l-list__line--center l-list__line--focus">
+                <p class="typeface typeface--strong typeface--md typeface--upper">Cotización: EU 28.000.000</p>
+              </li>
+              <li class="l-list__line l-list__line--center">
+                <p class="typeface typeface--strong typeface--xl typeface--upper">Cedida por:</p>
+                <p class="typeface typeface--md">Juan "Cachito" Caceffo</p>
+              </li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </section>
+    
+    <footer class="wrapper__footer footer">
+      <nav class="footer__navbar navbar">
+        <ul class="footer__items navbar__items navbar__items--close">
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-instagram"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-at"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      
+      <figure class="logo">
+        <img class="logo__img" src="/src/images/logo-icon.png" alt="WorldCapp Logotipo"></img>
+        <section class="logo__text">
+          <span class="logo__first-part">world</span><span class="logo-center-dot">.</span><span class="logo__last-part">capp</span>
+        </section>
+      </figure>
+    </footer>
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+</html>

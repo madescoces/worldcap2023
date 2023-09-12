@@ -1,0 +1,38 @@
+@import url("/src/components/commons/layout/layout.css");
+@import url("/src/components/commons/layout/grid-container.css");
+@import url("/src/components/commons/header/header.css");
+@import url("/src/components/commons/input/input.css");
+@import url("/src/components/commons/logo/logo.css");
+@import url("/src/components/commons/navbar/navbar.css");
+@import url("/src/components/commons/button/button.css");
+@import url("/src/components/commons/list/list.css");
+@import url("/src/components/commons/typeface/typeface.css");
+@import url("/src/components/commons/footer/footer.css");
+@import url("/src/components/card-user/card-user.css");
+@import url("/src/components/card/card-image.css");
+@import url("/src/components/user-forms/user-form.css");
+@import url("/src/components/commons/form/form.css");
+
+.wrapper__content{
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-top: 2em;
+}
+
+
+
+/* .grid-container{
+  padding: var(--gap-default);
+} */
+
+/* .wrapper__main-content {
+  padding: 0;
+} */
+
+@media screen and (min-width:769px) {
+  .wrapper__content {
+    padding: var(--gap-default);
+    margin-top: 0;
+  }
+}

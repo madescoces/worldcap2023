@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+  <title>Navbar Tabs</title>
+  <link rel="shortcut icon" href="/src/images/favicon.png" />
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="/src/styles/test-container.css" />
+  <link rel="stylesheet" href="/src/components/commons/button/button.css" />  
+  <link rel="stylesheet" href="navbar.css" />
+  
+</head>
+<body>
+  <div class="test-container test-container--vh-centered test-container--nav">
+    <nav class="navbar navbar--full-width">
+      <ul class="navbar__items navbar__items--close">
+        <li class="navbar__item navbar__item--mobile">
+          <button class="button button--icon button--animated button--disabled">
+            <a class="button__link" href="/src/components/user-forms/missing-stickers.html">
+              <i class="fas fa-chevron-left" style="color:var(--text-color-white)"></i>
+            </a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--single navbar__item--variable">
+          <button class="button button--scalable button--tab-on">
+            <a class="button__link" href="/src/components/user-forms/user-info-form.html">Perfil Usuario</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--hide navbar__item--variable">
+          <button class="button button--scalable button--tab-off">
+            <a class="button__link" href="/src/components/user-forms/duplicate-stickers.html">Figuritas Repetidas</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--hide navbar__item--variable">
+          <button class="button button--scalable button--tab-off">
+            <a class="button__link" href="/src/components/user-forms/missing-stickers.html">Figuritas Faltantes</a>
+          </button>
+        </li>
+        <li class="navbar__item navbar__item--mobile">
+          <button class="button button--icon button--animated">
+            <a class="button__link" href="/src/components/user-forms/duplicate-stickers.html">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </button>
+        </li>
+      </ul>
+    </nav> 
+  </div>
+</body>
+<script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+</html>

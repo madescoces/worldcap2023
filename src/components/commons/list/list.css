@@ -1,0 +1,73 @@
+/* List Modifiers */
+.l-list {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;  
+  align-items: center;
+  list-style: none;  
+  gap: var(--gap-md);
+}
+
+.l-list__line {
+  flex: 0 0 100%;
+  line-height: 1.8em;
+}
+
+.l-list__line--half {
+  flex: 0 0 calc(50% - var(--gap-md)/2);
+}
+
+.l-list__line--right {
+  text-align: right;
+}
+
+.l-list__line--center {
+  text-align: center;
+}
+
+.l-list__line--pad-btm {
+  padding-bottom: var(--gap-default);
+}
+
+.l-list__line--pad-top {
+  padding-top: var(--gap-default);
+}
+
+.l-list__line--pad-btm-sm {
+  padding-bottom: var(--gap-md);
+}
+
+.l-list__line--pad-top-sm {
+  padding-top: var(--gap-md);
+}
+
+.l-list__line--shadow,
+.l-list__line--focus{
+  border-radius: var(--border-radius-xs);
+  padding: var(--gap-sm);  
+}
+
+.l-list__line--shadow{
+  margin: var(--gap-sm) 0;
+}
+
+.l-list__line--shadow{  
+  box-shadow: var(--box-shadow-xs);
+}
+
+.l-list__line--highlight{  
+  background-color: var(--color-tertiary);
+  color: var(--text-color-white);
+}
+
+.l-list__line--action{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: var(--gap-default);
+}
+
+@media screen and (max-width:600px) {
+  .l-list__line--half {
+    flex: 0 0 100%;
+  }  
+}

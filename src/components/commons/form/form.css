@@ -1,0 +1,38 @@
+.f-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--gap-default);
+  flex: 1;
+  padding: var(--gap-default);
+  background-color: var(--color-clear-dark);
+  max-width: 80em;
+}
+
+.f-form__field{
+  display: flex;
+  border: none;
+  flex-basis: 100%;
+}
+
+.f-form__action{
+  display: flex;
+  padding-top: var(--gap-default);
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width:601px) {
+  .f-form {
+    border-radius: var(--border-radius-xl);
+  }
+  
+  .f-form__action{
+    gap: var(--gap-md);
+    justify-content: center;
+  }
+}
+
+
+
+
+

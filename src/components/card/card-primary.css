@@ -1,0 +1,10 @@
+@import url(card.css);
+
+.card--primary {
+  grid-template-rows: minmax(4.7em, max-content) 1fr;
+  grid-template-areas:
+    "header"
+    "data"; 
+  max-width: 36em;
+  min-width: 30em;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/src/styles/styles.css">
+  <link rel="stylesheet" href="login.css">
+  <link rel="shortcut icon" href="/src/images/favicon.png">  
+</head>
+
+<body>
+  <section class="wrapper wrapper--no-header">
+    <section class="wrapper__content">
+      <form class="form-login">
+        <section class="form-login__header">
+          <figure class="logo">
+            <img class="logo__img" src="/src/images/logo-icon.png" alt="WorldCapp Logotipo"></img>
+            <seFction class="logo__text">
+              <span class="logo__first-part">world</span><span class="logo-center-dot">.</span><span
+                class="logo__last-part">capp</span>
+            </seFction>
+          </figure>
+        </section>
+        <section class="form-login__actions">
+          <section class="input-row">
+            <label class="input-row__label">Usuario</label>
+            <div class="input__wrapper">
+              <input name="user" class="input input--icon-left" type="text" placeholder="Ingrese su usuario:" />
+              <i class="input__icon input__icon--left fas fa-user"></i>
+            </div>
+          </section>
+          <section class="input-row">
+            <label class="input-row__label">Contraseña</label>
+            <div class="input__wrapper">
+              <input name="password" id="password" class="input input--icon-left" type="password" placeholder="Ingrese su contraseña:" />
+              <i class="input__icon input__icon--left fas fa-key"></i>
+            </div>
+          </section>
+          <button class="button button--primary button--font-md">Ingresar</button>
+        </section>
+      </form>
+    </section>
+    <footer class="wrapper__footer footer">
+      <nav class="footer__navbar navbar">
+        <ul class="footer__items navbar__items navbar__items--close">
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-facebook-f"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-instagram"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-twitter"></i>
+            </button>
+          </li>
+          <li class="navbar__item">
+            <button class="button button--icon button--icon-circle button--animated">
+              <i class="fab fa-at"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <figure class="logo">
+        <img class="logo__img" src="/src/images/logo-icon.png" alt="WorldCapp Logotipo"></img>
+        <section class="logo__text">
+          <span class="logo__first-part">world</span><span class="logo-center-dot">.</span><span
+            class="logo__last-part">capp</span>
+        </section>
+      </figure>
+    </footer>
+  </section>
+</body>
+<script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+
+</html>

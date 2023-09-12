@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Input Component</title>
+  <link rel="shortcut icon" href="/src/images/favicon.png" />
+  <link rel="stylesheet" href="/src/styles/styles.css" />
+  <link rel="stylesheet" href="/src/styles/test-container.css" />
+  <link rel="stylesheet" href="/src/components/commons/typeface/" />
+  <link rel="stylesheet" href="input.css" />
+</head>
+
+<body>
+  <div class="test-container test-container--col-centered">    
+    <section class="input-row">    
+      <label class="input-row__label">Primary</label>
+      <div class="input__wrapper">
+        <input name="primary" class="input" type="text" placeholder="Primary Input Box" />
+      </div>
+    </section>
+    <section class="input-row">
+      <label class="input-row__label">Icon Left</label>
+      <div class="input__wrapper">
+        <input name="user" class="input input--icon-left" type="text" placeholder="Icon Left Input" />
+        <i class="input__icon input__icon--left fas fa-user"></i>
+      </div>
+    </section>
+    <section class="input-row">
+      <div class="input__wrapper">
+        <input name="search" class="input input--icon-right" type="text" placeholder="Icon Right Input" />
+        <i class="input__icon input__icon--right fas fa-magnifying-glass"></i>
+      </div>
+    </section>
+    <section class="input-row">
+      <label class="input-row__label">Password Field</label>
+      <div class="input__wrapper">
+        <input name="password" id="password" class="input input--icon-left" type="text" placeholder="Password Input" />
+        <i class="input__icon input__icon--left fas fa-key"></i>
+      </div>
+    </section>    
+    <section class="input-row">
+      <label class="input-row__label">Select Input</label>
+      <div class="input__wrapper">
+        <select class="input input--select">
+          <option>Select Primary Input</option>
+          <option>Opción 1</option>
+          <option>Opción 2</option>
+          <option>Opción 3</option>
+        </select>
+      </div>
+    </section>      
+  </div>  
+</body>
+  <script src="https://kit.fontawesome.com/007d112e2a.js" crossorigin="anonymous"></script>
+</html>

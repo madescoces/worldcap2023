@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;  
+  padding: 2rem;
+  z-index: 99;
+  box-shadow: var(--box-shadow-sm);
+  font-size: 2.5rem;
+  background-image: var(--gradient-primary);
+}
+
+.header__navbar.navbar {
+  display: none;
+}
+
+.header__items {
+  font-size: 0.7em;
+}
+
+@media screen and (min-width:768px) {
+  .header__navbar.navbar {
+    display: flex;
+  }
+
+  .header__burger-btm {
+    display: none;
+  } 
+}
