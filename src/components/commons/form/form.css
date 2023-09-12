@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: space-between;
   gap: var(--gap-default);
-  flex: 1;
   padding: var(--gap-default);
   background-color: var(--color-clear-dark);
   max-width: 80em;
+  width: 100%;
 }
 
 .f-form__field{
